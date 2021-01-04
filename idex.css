@@ -1,0 +1,44 @@
+.fontchange {
+  Font-family:Courier New;
+}
+
+body {
+  background-image: url("https://imgur.com/puBIfYE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+
+}
+
+* {
+  text-align: center;  
+}
+h1{
+  border: 1px solid black;
+  font-size: 50px;
+  background-color: black;
+  color: #bcbf7a;
+}
+
+h2{
+  border: 1px solid black;
+  font-size: 30px;
+  background-color: black;
+  color: #bcbf7a;
+}
+h3 {
+  text-decoration: underline;
+  font-size: 25px;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+ul{
+  font-size: 25px;
+  list-style-position: inside;
+  color: white;
+}
