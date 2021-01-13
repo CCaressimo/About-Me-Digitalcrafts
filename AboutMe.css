@@ -1,5 +1,10 @@
+@font-face {
+  src: url(fonts/Elianto/Elianto-Regular.ttf);
+  font-family: elianto;
+}
+
 .fontchange {
-  Font-family:;
+  Font-family:Courier New;
 }
 
 body {
@@ -74,6 +79,7 @@ body {
   padding: 0;
   text-align: center;
   color:rgb(182, 87, 10);
+  Font-family: elianto;
   font-size: 24px;
 }
 .container .box .content p {
@@ -115,6 +121,17 @@ body {
   background-attachment: fixed;
 }
 .container .box:nth-child(3) {
+  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container .box:nth-child(4) .icon {
+  background-image: url("https://i.imgur.com/0sjlSP7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .box:nth-child(4) {
   background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
