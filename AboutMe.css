@@ -1,5 +1,5 @@
 .fontchange {
-  Font-family:Courier New;
+  Font-family:;
 }
 
 body {
@@ -8,37 +8,115 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-
-* {
-  text-align: center;  
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
 }
-h1{
-  border: 1px solid black;
-  font-size: 50px;
-  background-color: black;
-  color: #bcbf7a;
+.container .box {
+  position: relative;
+  width: 400px;
+  height: auto;
+  background: rgb(65, 46, 6);
+  float:unset;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
 }
-
-h2{
-  border: 1px solid black;
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  z-index: 1;
+}
+.container .box:hover .icon {
+  top: 5px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+}
+.container .box .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  transition: .5s;
+  color: teal;
+}
+.container .box:hover .icon .fa {
   font-size: 30px;
-  background-color: black;
-  color: #bcbf7a;
 }
-h3 {
-  text-decoration: underline;
-  font-size: 25px;
-  color: white;
+.container .box .content {
+  position: center;
+  top: 100%;
+  padding: 24%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0%;
+}
+.container .box:hover .content{
+  top: 100px;
+  opacity: 100%;
+}
+.container .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  text-align: center;
+  color:rgb(182, 87, 10);
+  font-size: 24px;
+}
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-size: 15px;
+}
+.container .box:nth-child(1) .icon {
+  background-image: url("https://i.imgur.com/HNXIaP8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container .box:nth-child(1) {
+  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-p {
-  font-size: 20px;
-  color: white;
+.container .box:nth-child(2) .icon {
+  background-image: url("https://i.imgur.com/5Fj9kz6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-ul{
-  font-size: 25px;
-  list-style-position: inside;
-  color: white;
+.container .box:nth-child(2) {
+  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container .box:nth-child(3) .icon {
+  background-image: url("https://i.imgur.com/HNXIaP8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container .box:nth-child(3) {
+  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
