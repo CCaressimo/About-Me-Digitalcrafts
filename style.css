@@ -27,7 +27,7 @@ body {
   position: relative;
   width: 400px;
   height: auto;
-  background: rgb(65, 46, 6);
+  background: rgba(0, 0, 0, 0.336);
   float:unset;
   margin: 15px;
   box-sizing: border-box;
@@ -101,24 +101,21 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .container .box:nth-child(2) .icon {
+  background-image: url(logo/TP_Emblem.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .box:nth-child(2) {
+  background-image: url("https://i.imgur.com/ZitxxKs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.container .box:nth-child(3) .icon {
   background-image: url("https://i.imgur.com/5Fj9kz6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.container .box:nth-child(2) {
-  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.container .box:nth-child(3) .icon {
-  background-image: url("https://i.imgur.com/HNXIaP8.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .container .box:nth-child(3) {
   background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
@@ -127,9 +124,10 @@ body {
   background-attachment: fixed;
 }
 .container .box:nth-child(4) .icon {
-  background-image: url("https://i.imgur.com/0sjlSP7.jpg");
+  background-image: url("https://i.imgur.com/HNXIaP8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .container .box:nth-child(4) {
   background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
@@ -137,6 +135,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.container .box:nth-child(5) .icon {
+  background-image: url("https://i.imgur.com/HNXIaP8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container .box:nth-child(5) {
+  background-image: url("https://i.imgur.com/YkqJ0m9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 #video:hover {
   opacity: 0.7;
 }
