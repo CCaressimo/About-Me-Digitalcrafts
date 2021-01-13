@@ -74,20 +74,42 @@ body {
   top: 100px;
   opacity: 100%;
 }
-.container .box .content h3 {
+.container .box .content h1 {
   margin: 0 0 10px;
   padding: 0;
   text-align: center;
   color:rgb(182, 87, 10);
   Font-family: elianto;
   font-size: 24px;
+  text-decoration: underline overline;
+}
+.container .box .content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  text-align: center;
+  color:rgb(182, 87, 10);
+  Font-family: elianto;
+  font-size: 22px;
+  font-style: italic;
+  text-decoration: underline;
 }
 .container .box .content p {
   margin: 0;
   padding: 0;
   text-align: center;
   color:rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: bold;
+}
+.container .box .content ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: bold;
 }
 .container .box:nth-child(1) .icon {
   background-image: url("https://i.imgur.com/HNXIaP8.jpg");
@@ -147,7 +169,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+#video {
+  opacity: 20%;
+  float: left;
+  position: fixed;
+}
 #video:hover {
-  opacity: 0.7;
+  opacity: 100%;
 }
