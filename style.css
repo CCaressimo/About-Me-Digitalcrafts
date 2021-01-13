@@ -171,8 +171,12 @@ body {
 }
 #video {
   opacity: 20%;
-  float: left;
+  display: block;
+  height: 100%;
+  left: 80%;
   position: fixed;
+  top: 83%;
+  width: 100%;
 }
 #video:hover {
   opacity: 100%;
