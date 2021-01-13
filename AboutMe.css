@@ -137,3 +137,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+#video:hover {
+  opacity: 0.7;
+}
