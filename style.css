@@ -28,7 +28,7 @@
   font-size: 17px;
   transition: 0.5s;
   top: auto;
-  left: 43.5%;
+  left: 47%;
 
 }
 .topnav a:hover {
@@ -76,22 +76,33 @@ body {
 }
 .container {
   position: relative;
-  width: auto;
-  height: 300px;
-  top: 15px;
+  width: 43%;
+  height: auto;
+  top: 10px;
   left: 28%;
+  z-index: 1;
+  margin-left: unset;
+}
+
+@media only screen and (max-width:600px){
+  .container {
+    width: 20%;
+  }
 }
 .container .box {
   position: relative;
-  width: 800px;
+  width: 100%;
   height: auto;
   background: rgba(0, 0, 0, 0.336);
   margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 20px;
+  z-index: -1;
 }
+
 .container .box .icon {
+  opacity: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -101,11 +112,13 @@ body {
   z-index: 1;
 }
 .container .box:hover .icon {
+  opacity: 100%;
   top: 5px;
   left: calc(50% - 20px);
   width: 40px;
   height: 40px;
   border-radius: 20%;
+  z-index: 1;
 }
 .container .box .icon .fa {
   position:relative;
