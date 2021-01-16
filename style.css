@@ -9,9 +9,17 @@
 .topnav {
   background-color: rgba(51, 51, 51, 0.445);
   overflow: hidden;
-
 }
-.topnav a {
+.topnav-name {
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  font-size: 17px;
+  top: -1.8%;
+  left: 1%;
+}
+.topnav-center a {
+  position: relative;
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -19,6 +27,9 @@
   text-decoration: none;
   font-size: 17px;
   transition: 0.5s;
+  top: auto;
+  left: 43.5%;
+
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -54,7 +65,6 @@
   color: white;
 }
 
-
 body {
   background-image: url("https://i.imgur.com/HNXIaP8.jpg");
   background-size: cover;
@@ -68,17 +78,18 @@ body {
   position: relative;
   width: auto;
   height: 300px;
-  margin: auto;
+  top: 15px;
+  left: 28%;
 }
 .container .box {
   position: relative;
-  width: 450px;
+  width: 800px;
   height: auto;
   background: rgba(0, 0, 0, 0.336);
   margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .container .box .icon {
   position: absolute;
@@ -215,10 +226,55 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#video {
-  opacity: 20%;
+
+img {
+  opacity: 70%;
+  border-radius: 20px;
+  overflow: hidden;
   position: fixed;
-  bottom: 0;
+  transition: 0.8s;
+}
+img:hover {
+  opacity: 100%;
+  transition: 0.8s;  
+}
+.photo-1 {
+  position: absolute;
+  margin: 15px;
+  padding: 10px;
+  left: 0%;
+}
+.photo-2 {
+  position: absolute;
+  margin: 15px;
+  padding: 10px;
+  top: 50.35%;
+  left: 0%;
+}
+iframe {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.spotify {
+  opacity: 70%;
+  position: fixed;
+  margin: 15px;
+  padding: 10px;
+  right: 0;
+  transition: 0.8s;
+}
+.spotify:hover {
+  opacity: 100%;
+  transition: 0.8s;
+}
+
+#video {
+  opacity: 70%;
+  position: fixed;
+  margin: 15px;
+  padding: 10px;
+  top: 34%;
   right: 0;
   transition: 0.8s;
 }
@@ -226,5 +282,36 @@ body {
   opacity: 100%;
   transition: 0.8s;
 }
+#audio {
+  opacity: 70%;
+  position: fixed;
+  margin: 15px;
+  padding: 10px;
+  top: 74.35%;
+  right: 0;
+  transition: 0.8s;
+}
+#audio:hover {
+  opacity: 100%;
+  transition: 0.8s;
+}
 
-/* slideshow */
+
+h1 {
+  color:rgb(182, 87, 10);
+  Font-family: elianto;
+  font-size: 35px;
+  text-decoration: underline overline;
+}
+h2 {
+  color:rgb(182, 87, 10);
+  Font-family: elianto;
+  font-size: 22px;
+  text-decoration: underline;
+}
+p {
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: bold;
+}
